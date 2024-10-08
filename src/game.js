@@ -31,6 +31,7 @@ import { MeshFromPath } from "./graphics/meshFromPath";
 import { Click } from "./events/click";
 import { Interactivity } from "./events/interactivity";
 import { Dragging } from "./events/dragging";
+import { CustomMouseIcon } from "./events/customMouseIcon";
 
 export class Game {
     static init() {
@@ -65,7 +66,8 @@ export class Game {
         // let meshfrom = new MeshFromPath();
         // let click = new Click();
         // let interactivity = new Interactivity();
-        let dragging = new Dragging();
+        // let dragging = new Dragging();
+        let mouseicon = new CustomMouseIcon();
 
 
     }
