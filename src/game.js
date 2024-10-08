@@ -30,6 +30,7 @@ import { FillGradient, FillGradientEx } from "./graphics/fillGradient";
 import { MeshFromPath } from "./graphics/meshFromPath";
 import { Click } from "./events/click";
 import { Interactivity } from "./events/interactivity";
+import { Dragging } from "./events/dragging";
 
 export class Game {
     static init() {
@@ -63,7 +64,8 @@ export class Game {
         // let fill = new FillGradientEx();
         // let meshfrom = new MeshFromPath();
         // let click = new Click();
-        let interactivity = new Interactivity();
+        // let interactivity = new Interactivity();
+        let dragging = new Dragging();
 
 
     }
