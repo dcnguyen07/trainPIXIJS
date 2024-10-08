@@ -45,27 +45,25 @@ export class Logger {
         whiteBox.eventMode = 'static';
         blackBox.eventMode = 'static';
 
-        function onEvent(e){
+        function onEvent(e) {
             const type = e.type;
-            const targetName = e.targer.name;
+            const targetName = e.target.name; 
             const currentTargetName = e.currentTarget.name;
-            
+        
             logs.push(`${currentTargetName} received ${type} event (target is ${targetName})`);
-
-            if (currentTargetName === 'stage' || type === 'pointerenter' || type === 'pointerleave')
-            {
+        
+            if (currentTargetName === 'stage' || type === 'pointerenter' || type === 'pointerleave') {
                 logs.push('-----------------------------------------', '');
             }
-    
-            if (logs.length > 30)
-                {
-                    while (logs.length > 30)
-                    {
-                        logs.shift();
-                    }
+        
+            if (logs.length > 30) {
+                while (logs.length > 30) {
+                    logs.shift();
                 }
+            }
             logText.text = logs.join('\n');
         }
+        
         [app.stage, whiteBox, blackBox].forEach((object) =>
             {
                 object.addEventListener('pointerenter', onEvent);
