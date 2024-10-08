@@ -32,6 +32,7 @@ import { Click } from "./events/click";
 import { Interactivity } from "./events/interactivity";
 import { Dragging } from "./events/dragging";
 import { CustomMouseIcon } from "./events/customMouseIcon";
+import { CustomHitarea } from "./events/customHitarea";
 
 export class Game {
     static init() {
@@ -67,7 +68,8 @@ export class Game {
         // let click = new Click();
         // let interactivity = new Interactivity();
         // let dragging = new Dragging();
-        let mouseicon = new CustomMouseIcon();
+        // let mouseicon = new CustomMouseIcon();
+        let hitarea = new CustomHitarea();
 
 
     }
