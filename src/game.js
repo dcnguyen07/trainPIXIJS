@@ -34,6 +34,7 @@ import { Dragging } from "./events/dragging";
 import { CustomMouseIcon } from "./events/customMouseIcon";
 import { CustomHitarea } from "./events/customHitarea";
 import { Logger } from "./events/logger";
+import { PointerTracker } from "./events/pointerTracker";
 
 export class Game {
     static init() {
@@ -71,7 +72,8 @@ export class Game {
         // let dragging = new Dragging();
         // let mouseicon = new CustomMouseIcon();
         // let hitarea = new CustomHitarea();
-        let logger = new Logger();
+        // let logger = new Logger();
+        let pointer = new PointerTracker();
 
 
     }
