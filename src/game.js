@@ -41,6 +41,7 @@ import { SpriteEx } from "./masks/sprite";
 import { FilterEx } from "./masks/filter";
 import { BlurEx } from "./filterBasic/blur";
 import { ColorMatrix } from "./filterBasic/colorMatrix";
+import { DisplacementMapCrawlies } from "./filterBasic/displacementMap";
 
 export class Game {
     static init() {
@@ -85,7 +86,8 @@ export class Game {
         // let sprite = new SpriteEx();
         // let filter = new FilterEx();
         // let blur = new BlurEx();
-        let color = new ColorMatrix();
+        // let color = new ColorMatrix();
+        let displace = new DisplacementMapCrawlies();
 
 
     }
