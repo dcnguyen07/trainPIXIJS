@@ -36,6 +36,7 @@ import { CustomHitarea } from "./events/customHitarea";
 import { Logger } from "./events/logger";
 import { PointerTracker } from "./events/pointerTracker";
 import { Slider } from "./events/slider";
+import { Graphics, GraphicsEx } from "./masks/graphics";
 
 export class Game {
     static init() {
@@ -75,7 +76,8 @@ export class Game {
         // let hitarea = new CustomHitarea();
         // let logger = new Logger();
         // let pointer = new PointerTracker();
-        let slider = new Slider();
+        // let slider = new Slider();
+        let graphics = new GraphicsEx();
 
 
     }
