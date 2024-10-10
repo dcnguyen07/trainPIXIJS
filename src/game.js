@@ -39,6 +39,8 @@ import { Slider } from "./events/slider";
 import { Graphics, GraphicsEx } from "./masks/graphics";
 import { SpriteEx } from "./masks/sprite";
 import { FilterEx } from "./masks/filter";
+import { BlurEx } from "./filterBasic/blur";
+import { ColorMatrix } from "./filterBasic/colorMatrix";
 
 export class Game {
     static init() {
@@ -81,7 +83,9 @@ export class Game {
         // let slider = new Slider();
         // let graphics = new GraphicsEx();
         // let sprite = new SpriteEx();
-        let filter = new FilterEx();
+        // let filter = new FilterEx();
+        // let blur = new BlurEx();
+        let color = new ColorMatrix();
 
 
     }
