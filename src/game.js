@@ -38,6 +38,7 @@ import { PointerTracker } from "./events/pointerTracker";
 import { Slider } from "./events/slider";
 import { Graphics, GraphicsEx } from "./masks/graphics";
 import { SpriteEx } from "./masks/sprite";
+import { FilterEx } from "./masks/filter";
 
 export class Game {
     static init() {
@@ -79,7 +80,8 @@ export class Game {
         // let pointer = new PointerTracker();
         // let slider = new Slider();
         // let graphics = new GraphicsEx();
-        let sprite = new SpriteEx();
+        // let sprite = new SpriteEx();
+        let filter = new FilterEx();
 
 
     }
