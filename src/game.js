@@ -48,6 +48,7 @@ import { TriangleEx } from "./meshAndShaders/triangle";
 import { TextureRotate } from "./textures/textureRotate";
 import { TextureBasic } from "./textures/textureBasic";
 import { RenderTextureAdvanced } from "./textures/renderTextureAdvanced";
+import { Promise } from "./asset/promise";
 
 export class Game {
     static init() {
@@ -99,7 +100,8 @@ export class Game {
         // let triangle = new TriangleEx();
         // let rotate = new TextureRotate();
         // let texturebasic = new TextureBasic();
-        let renderTexture = new RenderTextureAdvanced();
+        // let renderTexture = new RenderTextureAdvanced();
+        let promise = new Promise();
 
     }
 }
