@@ -49,6 +49,8 @@ import { TextureRotate } from "./textures/textureRotate";
 import { TextureBasic } from "./textures/textureBasic";
 import { RenderTextureAdvanced } from "./textures/renderTextureAdvanced";
 import { Promise } from "./asset/promise";
+import { Async } from "./asset/async";
+import { Multiple } from "./asset/multiple";
 
 export class Game {
     static init() {
@@ -101,7 +103,9 @@ export class Game {
         // let rotate = new TextureRotate();
         // let texturebasic = new TextureBasic();
         // let renderTexture = new RenderTextureAdvanced();
-        let promise = new Promise();
+        // let promise = new Promise();
+        // let async = new Async();
+        let multiple = new Multiple();
 
     }
 }
