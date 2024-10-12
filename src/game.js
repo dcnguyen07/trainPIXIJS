@@ -43,8 +43,8 @@ import { BlurEx } from "./filterBasic/blur";
 import { ColorMatrix } from "./filterBasic/colorMatrix";
 import { DisplacementMapCrawlies } from "./filterBasic/displacementMap";
 import { MapFlag } from "./filterBasic/displacementMapFlag";
-import { MouseBlending } from "./filterAdvenced/mouseblending";
 import { TextureMeshBasic } from "./meshAndShaders/texturedMeshBasic";
+import { TriangleEx } from "./meshAndShaders/triangle";
 
 export class Game {
     static init() {
@@ -92,8 +92,8 @@ export class Game {
         // let color = new ColorMatrix();
         // let displace = new DisplacementMapCrawlies();
         // let maplag = new MapFlag();
-        let meshbasic = new TextureMeshBasic();
-
+        // let meshbasic = new TextureMeshBasic();
+        let triangle = new TriangleEx();
 
     }
 }

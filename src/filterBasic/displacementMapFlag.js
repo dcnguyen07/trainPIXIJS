@@ -37,6 +37,6 @@ export class MapFlag{
             if(displacementSprite.x > displacementSprite.width){
                 displacementSprite.x = 0;
             }
-        })
+        });
     }
 }
