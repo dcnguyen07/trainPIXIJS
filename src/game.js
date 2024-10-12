@@ -46,6 +46,7 @@ import { MapFlag } from "./filterBasic/displacementMapFlag";
 import { TextureMeshBasic } from "./meshAndShaders/texturedMeshBasic";
 import { TriangleEx } from "./meshAndShaders/triangle";
 import { TextureRotate } from "./textures/textureRotate";
+import { TextureBasic } from "./textures/textureBasic";
 
 export class Game {
     static init() {
@@ -95,7 +96,8 @@ export class Game {
         // let maplag = new MapFlag();
         // let meshbasic = new TextureMeshBasic();
         // let triangle = new TriangleEx();
-        let rotate = new TextureRotate();
+        // let rotate = new TextureRotate();
+        let texturebasic = new TextureBasic();
 
     }
 }
