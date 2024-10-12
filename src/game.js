@@ -45,6 +45,7 @@ import { DisplacementMapCrawlies } from "./filterBasic/displacementMap";
 import { MapFlag } from "./filterBasic/displacementMapFlag";
 import { TextureMeshBasic } from "./meshAndShaders/texturedMeshBasic";
 import { TriangleEx } from "./meshAndShaders/triangle";
+import { TextureRotate } from "./textures/textureRotate";
 
 export class Game {
     static init() {
@@ -93,7 +94,8 @@ export class Game {
         // let displace = new DisplacementMapCrawlies();
         // let maplag = new MapFlag();
         // let meshbasic = new TextureMeshBasic();
-        let triangle = new TriangleEx();
+        // let triangle = new TriangleEx();
+        let rotate = new TextureRotate();
 
     }
 }

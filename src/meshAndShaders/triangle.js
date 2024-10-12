@@ -1,7 +1,4 @@
 import { Application, Geometry, Mesh, Shader } from "pixi.js";
-import vertex from './triangle.vert';
-import fragment from './triangle.frag';
-import source from './triangle.wgsl';
 export class TriangleEx {
     constructor(){
         this.init();
