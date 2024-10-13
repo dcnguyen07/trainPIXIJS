@@ -51,6 +51,7 @@ import { RenderTextureAdvanced } from "./textures/renderTextureAdvanced";
 import { Promise } from "./asset/promise";
 import { Async } from "./asset/async";
 import { Multiple } from "./asset/multiple";
+import { Background } from "./asset/background";
 
 export class Game {
     static init() {
@@ -105,7 +106,8 @@ export class Game {
         // let renderTexture = new RenderTextureAdvanced();
         // let promise = new Promise();
         // let async = new Async();
-        let multiple = new Multiple();
+        // let multiple = new Multiple();
+        let background = new Background();
 
     }
 }

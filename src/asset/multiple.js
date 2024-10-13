@@ -4,7 +4,9 @@ export class Multiple{
     constructor(){
         this.init();
     }
-    async init(){
+
+    async init() {
+        
     const app = new Application();
     app.init({ background: '#1099bb', resizeTo: window }).then(() =>{
     document.body.appendChild(app.canvas);
@@ -13,8 +15,7 @@ export class Multiple{
     Assets.add({ alias: 'eggHead', src: 'https://pixijs.com/assets/eggHead.png' });
 
     const texturesPromise = Assets.load(['flowerTop', 'eggHead']); 
-    texturesPromise.then((textures) =>
-    {
+    texturesPromise.then((textures) => {
      
         const flower = Sprite.from(textures.flowerTop);
         flower.anchor.set(0.5);
@@ -28,6 +29,6 @@ export class Multiple{
         egg.y = app.screen.height / 2;
         app.stage.addChild(egg);
         });
-    });
-    }
+     });
+  }
 }
