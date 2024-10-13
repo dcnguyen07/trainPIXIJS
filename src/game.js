@@ -53,6 +53,7 @@ import { Async } from "./asset/async";
 import { Multiple } from "./asset/multiple";
 import { Background } from "./asset/background";
 import { Bundle } from "./asset/bundle";
+import { BasicCanvas } from "./offscreenCanvas/basixCanvas";
 
 export class Game {
     static init() {
@@ -109,7 +110,8 @@ export class Game {
         // let async = new Async();
         // let multiple = new Multiple();
         // let background = new Background();
-        let bundle = new Bundle();
+        // let bundle = new Bundle();
+        let basiccv = new BasicCanvas();
 
     }
 }
